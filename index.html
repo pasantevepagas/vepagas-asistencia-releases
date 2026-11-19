@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>VEPAGAS Asistencia</title>
+  <meta name="theme-color" content="#1C1C1C">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="VEPAGAS">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icono-180.png">
+  <link rel="icon" type="image/png" href="icono-192.png">
+  <link rel="stylesheet" href="estilos.css?v=8741063">
+</head>
+<body>
+  <main id="app" aria-live="polite"></main>
+
+  <div id="dialogo" class="dialogo" hidden>
+    <div class="dialogo-caja" role="dialog" aria-modal="true" aria-labelledby="dialogo-titulo">
+      <h3 id="dialogo-titulo">Cerrar sesión</h3>
+      <p>¿Desea cerrar su sesión en este teléfono?</p>
+      <div class="dialogo-botones">
+        <button class="btn-texto" data-accion="cancelar-salida">Cancelar</button>
+        <button class="btn-rojo-chico" data-accion="confirmar-salida">Cerrar sesión</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="lib/msal-browser.min.js"></script>
+  <script src="config.js?v=8741063"></script>
+  <script src="app.js?v=8741063"></script>
+</body>
+</html>
